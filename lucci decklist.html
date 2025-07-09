@@ -3,7 +3,7 @@
 <head>
   <style>
     body {
-      background: linear-gradient(to top, #0a3c5f, #000000); 
+      background: linear-gradient(to top, #343a27, #000000); 
       color: white;
     }
 
@@ -25,6 +25,7 @@
       width: 100%;
       height: auto;
       border-radius: 5px;
+      cursor: pointer;
     }
 
     .leader-image img {
@@ -34,18 +35,59 @@
       border-radius: 10px;
     }
 
-    .fullsize {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border: 5px solid #000;
-      cursor: zoom-out;
-      z-index: 9999;
-      width: 80vw;
+    .holographic-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #000;
+    }
+
+    .holographic-card {
+      width: 100%;
       height: auto;
-      background-color: rgba(0, 0, 0, 0.9);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      transition: all 0.5s ease;
+    }
+
+    .holographic-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        0deg, 
+        transparent, 
+        transparent 30%, 
+        rgba(130, 154, 64, 0.685)
+      );
+      transform: rotate(-45deg);
+      transition: all 0.8s ease;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .holographic-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(207, 198, 131, 0.65);
+    }
+
+    .holographic-card:hover::before {
+      opacity: 1;
+      transform: rotate(-45deg) translateY(100%);
+    }
+
+    .fullsize{
+
     }
   </style>
 </head>
@@ -63,22 +105,69 @@
     </div>
 
     <div class="karti">
-      <img src="lucci_snimki/mansherry op5.png" class="karti" alt="mansherry" onclick="sizechange(this)">
-      <img src="lucci_snimki/uta st08.png" class="karti" alt="uta" onclick="sizechange(this)">
-      <img src="lucci_snimki/one legged.png" class="karti" alt="one legged" onclick="sizechange(this)">
-      <img src="lucci_snimki/garp st19.png" class="karti" alt="garp" onclick="sizechange(this)">
-      <img src="lucci_snimki/spandime eb01.png" class="karti" alt="spandime" onclick="sizechange(this)">
-      <img src="lucci_snimki/brook eb1.png" class="karti" alt="brook1" onclick="sizechange(this)">
-      <img src="lucci_snimki/kuzan op02.png" class="karti" alt="kuzan1" onclick="sizechange(this)">
-      <img src="lucci_snimki/rob lucci op5.png" class="karti" alt="lucci" onclick="sizechange(this)">
-      <img src="lucci_snimki/rebecca op05.png" class="karti" alt="rebecca" onclick="sizechange(this)">
-      <img src="lucci_snimki/laboon eb01.png" class="karti" alt="thegoon" onclick="sizechange(this)">
-      <img src="lucci_snimki/sabo op04.png" class="karti" alt="sabo" onclick="sizechange(this)">
-      <img src="lucci_snimki/jack op08.png" class="karti" alt="jack" onclick="sizechange(this)">
-      <img src="lucci_snimki/kuzan10 op02.png" class="karti" alt="kuzan2" onclick="sizechange(this)">
-      <img src="lucci_snimki/six king pistol.png" class="karti" alt="pistol" onclick="sizechange(this)">
-      <img src="lucci_snimki/tempest kick.png" class="karti" alt="kick" onclick="sizechange(this)">
-      <img src="lucci_snimki/finger pistol.png" class="karti" alt="finger" onclick="sizechange(this)">
+      <div class="holographic-card">
+        <img src="lucci_snimki/mansherry op5.png" alt="mansherry" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/uta st08.png" alt="uta" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/one legged.png" alt="one legged" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/garp st19.png" alt="garp" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/spandime eb01.png" alt="spandime" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/brook eb1.png" alt="brook1" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/kuzan op02.png" alt="kuzan1" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/rob lucci op5.png" alt="lucci" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/rebecca op05.png" alt="rebecca" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/laboon eb01.png" alt="thegoon" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/sabo op04.png" alt="sabo" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/jack op08.png" alt="jack" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/kuzan10 op02.png" alt="kuzan2" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/six king pistol.png" alt="pistol" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/tempest kick.png" alt="kick" onclick="sizechange(this)">
+      </div>
+
+      <div class="holographic-card">
+        <img src="lucci_snimki/finger pistol.png" alt="finger" onclick="sizechange(this)">
+      </div>
     </div>
   </div>
 
