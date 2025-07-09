@@ -29,8 +29,12 @@
       cursor: pointer;
     }
 
-    .broika {
-      
+    .textbroika{
+      position: relative;
+      z-index: 1;
+      font-size: 0.9rem;
+      color: #ffffff;
+      float: below;
     }
 
     .leader-image img {
@@ -91,24 +95,31 @@
       transform: rotate(-45deg) translateY(100%);
     }
 
-     .bypass-holo {
-      position: relative;
-      z-index: 2;
-      font-size: 0.9rem;
-      color: #ddd;
-      margin: 0;
-    }
-    
     .fullsize{}
+
   </style>
 </head>
 <body>
 
+
+<div class="nachalna-chast" style="position: relative; display: inline-block; width: 100%;">
+  <img src="lucci_snimki/background1.png" style="width: 100%; height: auto; display: block;">
+
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  padding: 20px; border-radius: 10px;">
+  <center>
+  <p style="font-size: 28px; margin: 0;">OP7 Rob Lucci</p>
+  <h2 style="font-size: 36px; margin: 10px 0 0;">The deck DID NOT die with the Gecko Moria and Ice Age ban!</h2>
+  </center>
+  </div>
+</div>
+
+
   <left>
-    <h1> OP11 Black Lucci Decklist</h1>
-    <h2> The deck DID NOT die with the Gecko Moria and Ice Age ban!</h2>
+    <h1> OP11 Decklist</h1>
     <p> 50 cards, 42 characters, 8 events</p>
   </left>
+
 
   <div class="cqloto_neshto">
     <div class="leader-image">
@@ -120,7 +131,10 @@
     <div class="karti">
       <div class="holographic-card">
         <img src="lucci_snimki/mansherry op5.png" alt="mansherry" onclick="sizechange(this)">
-         <h1 = class "broika"> x2 </h1>
+      </div>
+
+      <div class = "textbroika">
+        <h1 = class "textbroika"> x2 </h1>
       </div>
 
       <div class="holographic-card">
@@ -198,6 +212,12 @@
       element.classList.toggle("fullsize");
     }
   </script>
+
+   <center>
+    <h1> Guide and different combos</h1>
+  </center>
+  <p> mazna </p>
+
 
 </body>
 </html>
