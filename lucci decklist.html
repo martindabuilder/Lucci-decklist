@@ -17,15 +17,20 @@
     .karti {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-      gap: 10px;
+      gap: 15px;
       flex: 3;
+      z-index: 0
     }
 
     .karti img {
       width: 100%;
       height: auto;
-      border-radius: 5px;
+      border-radius: 10px;
       cursor: pointer;
+    }
+
+    .broika {
+      
     }
 
     .leader-image img {
@@ -86,17 +91,23 @@
       transform: rotate(-45deg) translateY(100%);
     }
 
-    .fullsize{
-
+     .bypass-holo {
+      position: relative;
+      z-index: 2;
+      font-size: 0.9rem;
+      color: #ddd;
+      margin: 0;
     }
+    
+    .fullsize{}
   </style>
 </head>
 <body>
 
   <left>
-    <h1>OP11 Black Lucci Decklist</h1>
-    <h2>The deck DID NOT die with the Gecko Moria and Ice Age ban!</h2>
-    <p>50 cards, 42 characters, 8 events</p>
+    <h1> OP11 Black Lucci Decklist</h1>
+    <h2> The deck DID NOT die with the Gecko Moria and Ice Age ban!</h2>
+    <p> 50 cards, 42 characters, 8 events</p>
   </left>
 
   <div class="cqloto_neshto">
@@ -109,6 +120,7 @@
     <div class="karti">
       <div class="holographic-card">
         <img src="lucci_snimki/mansherry op5.png" alt="mansherry" onclick="sizechange(this)">
+         <h1 = class "broika"> x2 </h1>
       </div>
 
       <div class="holographic-card">
