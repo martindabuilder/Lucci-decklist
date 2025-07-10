@@ -3,304 +3,288 @@
 <head>
   <style>
     body {
-      background: linear-gradient(to top, #241d12, #000000); 
-      color: white;
-    }
+    background: black;
+    color: white;
+  }
 
-    .startup_image_container{
-      position: relative;
-    }
+  .startup_image_container {
+    position: relative;
+  }
 
-    .black_gradient{
-      height: 100%;
-      width: 100%;
-      background-image: linear-gradient(to top, black, transparent);
-      opacity: 0.9;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+  .black_gradient {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, black, transparent);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    .cqloto_neshto {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      padding: 20px;
-    }
+  .cqloto_neshto {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
 
-    .karti {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 15px;
-      flex: 3;
-      z-index: 0
-    }
+  .karti {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    flex: 3;
+    z-index: 0;
+  }
 
-    .karti img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      cursor: pointer;
-    }
+  .karti img {
+    width: 102%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 
-    .textbroika{
-      position: relative;
-      z-index: 1;
-      font-size: 0.9rem;
-      color: #ffffff;
-      float: below;
-    }
+  .textbroika {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 8px;
+  }
 
-    .leader-image img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 10px;
-    }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .holographic-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #000;
-    }
+  .leader-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
 
-    .holographic-card {
-      width: 100%;
-      height: auto;
-      background: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-      border-radius: 15px;
-      transition: all 0.5s ease;
-    }
+  .holographic-card {
+    width: 100%;
+    height: auto;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+  }
 
-    .holographic-card::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(
-        0deg, 
-        transparent, 
-        transparent 30%, 
-        rgba(255, 255, 255, 0.685)
+  .holographic-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      0deg,
+      transparent,
+      transparent 30%,
+      rgba(255, 255, 255, 0.685)
       );
-      transform: rotate(-45deg);
-      transition: all 0.8s ease;
-      opacity: 0;
-      pointer-events: none;
-      z-index: 1;
-    }
+    transform: rotate(-45deg);
+    transition: all 0.8s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
 
-    .holographic-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.65);
-    }
+  .holographic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.65);
+  }
 
-    .holographic-card:hover::before {
-      opacity: 1;
-      transform: rotate(-45deg) translateY(100%);
-    }
+  .holographic-card:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+  }
 
-    .fullsize{}
+  .fullsize {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    cursor: zoom-out;
+  }
 
   </style>
 </head>
 <body>
 
-
-<div class ="startup_image_container">
-  <div class="black_gradient"> </div>
- <div style =
-  "position: absolute; 
-  top: 50%; left: 50%; 
-  transform: translate(-50%, -50%);
-  padding: 20px; border-radius: 10px;">
-
-  <center>
-  <p style="font-size: 50px; margin: 0;">OP7 Rob Lucci</p>
-  <h2 style="font-size: 20px; margin: 10px 0 0;">The deck DID NOT die with the Gecko Moria and Ice Age ban!</h2>
-  </center>
+<div class="startup_image_container">
+  <div class="black_gradient"></div>
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; border-radius: 10px;">
+    <center>
+      <p style="font-size: 50px; margin: 0;">OP7 Rob Lucci</p>
+      <h2 style="font-size: 20px; margin: 10px 0 0;">The deck DID NOT die with the Gecko Moria and Ice Age ban!</h2>
+    </center>
   </div>
-
   <img src="lucci_snimki/background1.png" style="width: 100%; height: auto; display: block;">
 </div>
 
-  <left>
-    <h1> OP11 Decklist</h1>
-    <p> 50 cards, 42 characters, 8 events</p>
-  </left>
+<left>
+  <h1>OP11 Decklist</h1>
+  <p>50 cards, 42 characters, 8 events</p>
+</left>
 
-  <div class="cqloto_neshto">
-    <div class="leader-image">
-      <div class = "holographic-card">
+<div class="cqloto_neshto">
+  <div class="leader-image">
+    <div class="holographic-card">
       <img src="lucci_snimki/leader.png" alt="leader">
-      </div>
     </div>
+  </div>
 
-    <div class="karti">
+  <div class="karti">
+
+    <div class="card-container">
       <div class="holographic-card">
         <img src="lucci_snimki/mansherry op5.png" alt="mansherry" onclick="sizechange(this)">
       </div>
-
-      <div class = "textbroika">
-        <p = class "textbroika"> x2 </p>
-      </div>
-
+      <div class="textbroika">x2</div>
+    </div>
+    
+    <div class="card-container">    
       <div class="holographic-card">
         <img src="lucci_snimki/uta st08.png" alt="uta" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x2</div>
+    </div>
 
+    <div class="card-container"> 
       <div class="holographic-card">
         <img src="lucci_snimki/one legged.png" alt="one legged" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x4</div>
+    </div>
 
+    <div class="card-container"> 
       <div class="holographic-card">
         <img src="lucci_snimki/garp st19.png" alt="garp" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x2</div>
+    </div>
 
+    <div class="card-container"> 
       <div class="holographic-card">
         <img src="lucci_snimki/bart op04.png" alt="garp" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x4</div>
+    </div>
 
+    <div class="card-container"> 
       <div class="holographic-card">
         <img src="lucci_snimki/spandime eb01.png" alt="spandime" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x2</div>
+    </div>
 
+    <div class="card-container"> 
       <div class="holographic-card">
         <img src="lucci_snimki/brook eb1.png" alt="brook1" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x4</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/kuzan op02.png" alt="kuzan1" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x4</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/rob lucci op5.png" alt="lucci" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x4</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/rebecca op05.png" alt="rebecca" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x4</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/laboon eb01.png" alt="thegoon" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x2</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/sabo op04.png" alt="sabo" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x1</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/brook op06.png" alt="sabo" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x2</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/jack op08.png" alt="jack" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x3</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/kuzan10 op02.png" alt="kuzan2" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x2</div>
+    </div>
 
+    <div class="card-container"> 
       <div class="holographic-card">
         <img src="lucci_snimki/six king pistol.png" alt="pistol" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x2</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/tempest kick.png" alt="kick" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x4</div>
+    </div>
 
+    <div class="card-container">   
       <div class="holographic-card">
         <img src="lucci_snimki/finger pistol.png" alt="finger" onclick="sizechange(this)">
       </div>
+      <div class="textbroika">x2</div>
+    </div>
     </div>
   </div>
 
-  <script>
-    function sizechange(element) {
-      element.classList.toggle("fullsize");
-    }
-  </script>
-
-   <center>
+  <center>
     <h1> Guide and different combos</h1>
   </center>
-  <p> mazna karta</p>
+  <p> trash rebecca, mansherry add rebecca, rebecca play brook, brook KO</p>
+  <p> win the game lol</p>
 
+  <script>
+  function sizechange(element) 
+  {
+    element.classList.toggle("fullsize");
+  }
 
+  </script>
 </body>
 </html>
-
-
-<!--
-<div class="tilt-container">
-  <div class="tilt-element">
-    Hover me
-  </div>
-</div>
-
-    .tilt-container {
-      perspective: 1000px;
-    }
-
-    .tilt-element {
-      width: 200px;
-      height: 100px;
-      background-color: lightblue;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: transform 0.3s ease-out;
-    }
-
-    .tilt-element:hover {
-      transform: rotateX(10deg) rotateY(-15deg);
-    }
-
-
-    <!DOCTYPE html>
-<html>
-<head>
-<title>3D Tilt Animation</title>
-<style>
-.tilt-container {
-  perspective: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-}
-
-.tilt-element {
-  width: 200px;
-  height: 100px;
-  background-color: lightblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease-out;
-  transform-style: preserve-3d; /* Required for some 3D effects */
-}
-
-.tilt-element:hover {
-  transform: rotateX(10deg) rotateY(-15deg);
-}
-</style>
-</head>
-<body>
-  <div class="tilt-container">
-    <div class="tilt-element">
-      Hover me
-    </div>
-  </div>
-</body>
-</html>
--->
