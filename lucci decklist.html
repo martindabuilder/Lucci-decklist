@@ -107,19 +107,20 @@
   }
 
   .fullsize {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    align-items: center;
     z-index: 99;
-    cursor: zoom-out;
-    transform: scale(3);
+    transform: scale(2);
   }
-
+  
   </style>
 </head>
 </body>
+
+ <script>
+  function sizechange(element) 
+  {
+    element.classList.toggle("fullsize");
+  }
+  </script>
 
 <div class="startup_image_container">
   <div class="black_gradient"></div>
@@ -284,12 +285,6 @@
   <p>A big appeal for Lucci in this current meta is that he, at his core, is a pretty turn-agnostic deck. 
   You have great going first and second curves, allowing you to pick and choose which to take depending on the matchup. </p>
 
-  <script>
-  function sizechange(element) 
-  {
-    element.classList.toggle("fullsize");
-  }
-  </script>
 
 <script>
 const cardeffects = {
